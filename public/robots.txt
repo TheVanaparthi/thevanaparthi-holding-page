@@ -1,0 +1,5 @@
+# Search, user-triggered, and training crawlers are all allowed.
+User-agent: *
+Allow: /
+
+Sitemap: https://thevanaparthi.com/sitemap.xml
