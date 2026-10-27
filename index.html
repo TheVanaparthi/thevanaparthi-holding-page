@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Vanaparthi</title>
+    <meta name="description" content="The Vanaparthi. Moving India further." />
+    <meta property="og:title" content="The Vanaparthi" />
+    <meta property="og:description" content="Moving India further." />
+    <meta name="theme-color" content="#F5F4EF" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <script>document.documentElement.classList.add("js");</script>
+    <style>
+      /* Critical: prevents a flash of the full-size mark and un-hidden text before styles and script land. */
+      html { background: #f5f4ef; }
+      .backdrop { position: fixed; inset: 0; overflow: hidden; pointer-events: none; }
+      .watermark { position: absolute; left: 50%; top: 50%; opacity: 0; }
+      .js .hero__letter, .js .hero__line { opacity: 0; }
+      .js .line > span { transform: translateY(110%); }
+      .js .hero__v polygon { opacity: 0; }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300;1,6..72,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="backdrop" aria-hidden="true">
+      <svg class="watermark" viewBox="0 0 625 510" preserveAspectRatio="xMidYMid meet">
+        <polygon points="0,0 160,0 312.5,262 465,0 625,0 312.5,510" />
+      </svg>
+    </div>
+
+    <main>
+      <header class="hero" id="top">
+        <div class="hero__inner">
+        <div class="hero__mark">
+          <span class="hero__the">
+            <span class="hero__letter">T</span><span class="hero__letter">H</span><span class="hero__letter">E</span>
+          </span>
+          <svg class="hero__v" viewBox="0 0 625 510" aria-hidden="true">
+            <defs>
+              <clipPath id="v-reveal">
+                <rect class="hero__v-clip" x="0" y="0" width="625" height="510" />
+              </clipPath>
+            </defs>
+            <polygon clip-path="url(#v-reveal)" points="0,0 160,0 312.5,262 465,0 625,0 312.5,510" />
+          </svg>
+          <h1 class="hero__name" aria-label="The Vanaparthi">
+            <span class="hero__letter">V</span><span class="hero__letter">A</span><span class="hero__letter">N</span><span class="hero__letter">A</span><span class="hero__letter">P</span><span class="hero__letter">A</span><span class="hero__letter">R</span><span class="hero__letter">T</span><span class="hero__letter">H</span><span class="hero__letter">I</span>
+          </h1>
+        </div>
+        <div class="hero__tag">
+          <p class="hero__line">Moving India further.</p>
+        </div>
+        </div>
+      </header>
+
+      <section class="turn" aria-hidden="true"></section>
+
+      <section class="movement movement--thesis">
+        <p class="movement__label">The future</p>
+        <p class="movement__text">
+          <span class="line">Stocks went digital. Then banking.</span>
+          <span class="line">Land is next.</span>
+        </p>
+      </section>
+
+      <section class="movement">
+        <p class="movement__label">The home</p>
+        <p class="movement__text">
+          <span class="line">A home, designed on a screen</span>
+          <span class="line">before the first brick is laid.</span>
+          <span class="line">Every wall, material, and fitting</span>
+          <span class="line">chosen by the person who will live in it.</span>
+        </p>
+      </section>
+
+      <section class="movement">
+        <p class="movement__label">The ground</p>
+        <p class="movement__text">
+          <span class="line">Then the ground beneath it.</span>
+          <span class="line">Owned and backed from anywhere in India.</span>
+        </p>
+      </section>
+
+      <section class="movement">
+        <p class="movement__label">The capital</p>
+        <p class="movement__text">
+          <span class="line">And the capital for what the country actually needs.</span>
+          <span class="line">Not another feed.</span>
+          <span class="line">Intelligence, software, and the people building them.</span>
+        </p>
+      </section>
+
+      <section class="turn turn--back" aria-hidden="true"></section>
+
+      <section class="close">
+        <p class="close__text"><span class="line">This is the first decade.</span></p>
+      </section>
+
+      <footer class="foot">
+        <div class="foot__col">
+          <p class="foot__label">First</p>
+          <p class="foot__value">
+            <a href="https://bytenot.com" target="_blank" rel="noopener">Bytenot</a>
+            <span class="foot__muted">Technology. Incorporating, 2026.</span>
+          </p>
+        </div>
+        <div class="foot__col">
+          <p class="foot__label">Reach</p>
+          <p class="foot__value">
+            <a href="mailto:thevanaparthi@gmail.com">thevanaparthi@gmail.com</a>
+            <a href="https://instagram.com/thevanaparthi" target="_blank" rel="noopener">Instagram</a>
+          </p>
+        </div>
+        <div class="foot__col">
+          <p class="foot__label">Where</p>
+          <p class="foot__value">
+            <span>Telangana, India</span>
+            <span class="foot__muted">Est. 2026</span>
+          </p>
+        </div>
+        <p class="foot__copy">© 2026 The Vanaparthi</p>
+      </footer>
+    </main>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
